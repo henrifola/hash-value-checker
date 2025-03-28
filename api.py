@@ -18,6 +18,6 @@ async def check_file(file: UploadFile = File(...)):
     Upload a file to check its integrity based on stored hashes.
     """
     content = await file.read()
-    print(content)  # For debugging; you can remove or replace with logging if needed.
+    print(content)
     status = check_file_obj(content)
     return {"filename": file.filename, "status": status}

@@ -58,6 +58,6 @@ HASH-VALUE/
 └── README.md               # Project documentation
 ```
 ## Database
-The SQLite database stores the file path and hash of each file. The file paths are treated as unique identifiers, and only the hash is updated when the file changes.
+The SQLite database stores hash of each file. There is an incremental PK, and only the hash is updated when the file changes.
 
 The storage/hash_store.db file will contain the database.
