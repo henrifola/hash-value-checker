@@ -1,0 +1,11 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+# The repos can be cloned and used locally instead of github depency
+repos:
+-   repo: local
+    hooks:
+    -   id: lint-and-check
+        name: 'Run linting and check for modified files'
+        entry: ./lint_and_check.sh
+        language: system
+        types: [python]

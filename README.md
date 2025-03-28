@@ -34,6 +34,12 @@ Python 3.8+ is required.
 * Running the CLI Script
     python3 main.py <filepath>
 
+## Setup Pre-commit Hooks
+To ensure code is formatted and linted before committing, install the pre-commit hooks by running:
+```
+pre-commit install
+```
+
 ## Directory Structure
 ```
 HASH-VALUE/
@@ -58,6 +64,6 @@ HASH-VALUE/
 └── README.md               # Project documentation
 ```
 ## Database
-The SQLite database stores hash of each file. There is an incremental PK, and only the hash is updated when the file changes.
+The SQLite database stores hash of each file. There is an incremental PK, and the hash is updated when the file changes.
 
 The storage/hash_store.db file will contain the database.
